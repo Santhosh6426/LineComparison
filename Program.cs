@@ -25,7 +25,9 @@ namespace LineComparison
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Computation Program.");
+            /// To store the length of line 1
             double distance = 0;
+            ///To store the length of line 2
             double distance2 = 0;
             for (int i = 1; i <= 2; i++)
             {
@@ -54,13 +56,17 @@ namespace LineComparison
                     Console.WriteLine("The length of the line "+i+" is : " + distance2);
                 }
             }
-            ///To check the equality of the lines
-            if (distance == distance2)
+            ///To Compare the 2 lines and display Whether greater or equal or smaller.
+            if (distance > distance2)
             {
-                Console.WriteLine("The Lines are Equal");
+                Console.WriteLine("The Line 1 is Greater than Line 2!");
+            }
+            else if(distance==distance2)
+            {
+                Console.WriteLine("The Lines are Equal!");
             }
             else {
-                Console.WriteLine("The lines are not Equal!");
+                Console.WriteLine("The Line 2 is Greater than line 1!");
             }
         }
     }
